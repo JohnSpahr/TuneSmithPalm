@@ -1,0 +1,555 @@
+"mdl"
+7
+"TuneSmith","appl","John",1063,505,0
+""
+1063
+1063
+"TuneSmith"
+"1.0"
+""
+"bmpfile"
+1
+"Bitmap1063"
+1063
+"..\Bitmaps\icon.jpg"
+"mnu"
+2,"TuneSmith"
+1043
+1
+"menu"
+1
+"TuneSmith","",1044
+3
+"menu"
+1
+"Beep","B","",1045
+"Sub Menu1045_click()
+	Beep 'it's that simple, yes
+End Sub"
+"menu"
+1
+"About","A","",1046
+"Sub Menu1046_click()
+	NextForm ~aboutForm~
+End Sub"
+"menu"
+1
+"Quit","Q","",1047
+"Sub Menu1047_click()
+	Stop 'close app
+End Sub"
+"vew"
+4,1003,#FALSE#,#TRUE#,#TRUE#,0,0,0,160,160,0,#TRUE#,#FALSE#
+"TuneSmith"
+"mainForm"
+"Sub Form1003_Before()
+	
+	tonPopup.Text = ~Standard~ 'default to pos 2
+	tonPopup.Selected = 2
+End Sub"
+0
+"Sub Form1003_After()
+End Sub"
+"Sub Form1003_Event()
+	'add main menu
+	Dim EventType as Integer
+	Dim key as String
+	EventType=GetEventType()
+	If EventType = nsbKeyOrButton Then
+		key = GetKey()
+		If asc(key) = 5 Then
+			MenuDraw ~TuneSmith~
+		End If
+	End If
+End Sub"
+0,0,0,0
+"lbl"
+1
+"obj"
+3
+"lbl","Label1004",1004,12,28,14,7,#TRUE#,2,"1",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1005",1005,12,56,14,7,#TRUE#,2,"2",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1006",1006,12,84,14,7,#TRUE#,2,"3",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1007",1007,12,112,14,7,#TRUE#,2,"4",0,0,0
+""
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button0",1008,28,20,28,28,#TRUE#,0,"Low",0,0,0
+"Sub object1008()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 82,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 262,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 659,duration,volume 
+	EndIf
+End Sub"
+"sli"
+1
+#FALSE#,#FALSE#,#FALSE#,#FALSE#,30,3000,10,500,0,0
+"obj"
+3
+"sli","durSlider",1009,4,148,12,72,#TRUE#,0,"Slider",0,0,0
+""
+"sli"
+1
+#FALSE#,#FALSE#,#FALSE#,#FALSE#,1,64,"10",38,0,0
+"obj"
+3
+"sli","volSlider",1010,84,148,12,72,#TRUE#,0,"Slider",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1011",1011,4,136,11,36,#TRUE#,0,"Duration",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1012",1012,84,136,11,38,#TRUE#,0,"Loudness",0,0,0
+""
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button1",1023,56,20,28,28,#TRUE#,0,"",0,0,0
+"Sub object1023()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 87,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 277,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 698,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button3",1024,112,20,28,28,#TRUE#,0,"",0,0,0
+"Sub object1024()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 98,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 311,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 784,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button2",1025,84,20,28,28,#TRUE#,0,"",0,0,0
+"Sub object1025()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 93,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 294,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 740,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button7",1027,112,48,28,28,#TRUE#,0,"",0,0,0
+"Sub object1027()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 123,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 392,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 988,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button6",1028,84,48,28,28,#TRUE#,0,"",0,0,0
+"Sub object1028()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 117,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 370,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 932,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button5",1029,56,48,28,28,#TRUE#,0,"",0,0,0
+"Sub object1029()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 110,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 349,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 880,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button4",1030,28,48,28,28,#TRUE#,0,"",0,0,0
+"Sub object1030()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 104,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 330,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 831,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button12",1031,28,104,28,28,#TRUE#,0,"",0,0,0
+"Sub object1031()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 165,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 523,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1319,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button11",1032,112,76,28,28,#TRUE#,0,"",0,0,0
+"Sub object1032()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 156,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 494,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1245,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button10",1033,84,76,28,28,#TRUE#,0,"",0,0,0
+"Sub object1033()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 147,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 466,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1175,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button9",1034,56,76,28,28,#TRUE#,0,"",0,0,0
+"Sub object1034()
+		'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 139,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 440,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1109,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button8",1035,28,76,28,28,#TRUE#,0,"",0,0,0
+"Sub object1035()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 131,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 415,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1047,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button13",1036,56,104,28,28,#TRUE#,0,"",0,0,0
+"Sub object1036()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 175,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 554,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1397,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button14",1037,84,104,28,28,#TRUE#,0,"",0,0,0
+"Sub object1037()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 185,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 587,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1480,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button15",1038,112,104,28,28,#TRUE#,0,"High",0,0,0
+"Sub object1038()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 196,duration,volume
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 622,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1568,duration,volume
+	EndIf
+End Sub"
+"lbl"
+1
+"obj"
+3
+"lbl","Label1039",1039,4,4,11,55,#TRUE#,1,"TuneSmith",0,0,0
+""
+"pop"
+2
+#TRUE#,0,3
+"Lower	Standard	Higher"
+"obj"
+3
+"pop","tonPopup",1040,104,4,12,56,#TRUE#,0,"Tone",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1042",1042,76,4,11,23,#TRUE#,0,"Tone:",0,0,0
+""
+"vew"
+4,1049,#FALSE#,#TRUE#,#TRUE#,0,0,0,160,160,0,#FALSE#,#TRUE#
+"About"
+"aboutForm"
+"Sub Form1049_Before()
+	appInfoList.Selected = 0 'don't allow selection for info list
+End Sub"
+0
+"Sub Form1049_After()
+	
+End Sub"
+""
+0,0,0,0
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","Button1051",1051,104,136,16,48,#TRUE#,0,"Close",0,0,0
+"Sub object1051()
+	NextForm ~mainForm~
+End Sub"
+"lst"
+2
+4
+"Version 1.0	Created by John Spahr	johnspahr.org	github.com/johnspahr"
+"obj"
+3
+"lst","appInfoList",1052,8,76,52,144,#TRUE#,0,"",0,0,0
+"Sub object1052()
+	appInfoList.Selected = 0 'don't allow selection for info list
+End Sub"
+"lbl"
+1
+"obj"
+3
+"lbl","Label1053",1053,36,28,11,55,#TRUE#,1,"TuneSmith",0,0,0
+""
+"bmp"
+1
+1063
+"obj"
+3
+"bmp","Bitmap1054",1054,8,28,24,24,#TRUE#,0,"1063",0,0,0
+""
+"lbl"
+1
+"obj"
+3
+"lbl","Label1055",1055,36,40,11,49,#TRUE#,0,"for Palm OS",0,0,0
+""
+"end"
