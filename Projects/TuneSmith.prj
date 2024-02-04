@@ -5,7 +5,7 @@
 1063
 1063
 "TuneSmith"
-"1.0"
+"1.1"
 ""
 "bmpfile"
 1
@@ -92,7 +92,7 @@ End Sub"
 #TRUE#,#TRUE#,#TRUE#
 "obj"
 3
-"but","button0",1008,28,20,28,28,#TRUE#,0,"Low",0,0,0
+"but","button0",1008,28,20,28,28,#TRUE#,0,"C",0,0,0
 "Sub object1008()
 	'get slider values and assign them to variables
 	Dim duration as Integer
@@ -103,11 +103,11 @@ End Sub"
 	
 	'freq,duration,volume/amp
 	If tonPopup.Text = ~Lower~
-		Sound 82,duration,volume 
+		Sound 131,duration,volume 
 	ElseIf tonPopup.Text = ~Standard~
 		Sound 262,duration,volume 
 	ElseIf tonPopup.Text = ~Higher~
-		Sound 659,duration,volume 
+		Sound 523,duration,volume 
 	EndIf
 End Sub"
 "sli"
@@ -141,7 +141,7 @@ End Sub"
 #TRUE#,#TRUE#,#TRUE#
 "obj"
 3
-"but","button1",1023,56,20,28,28,#TRUE#,0,"",0,0,0
+"but","button1",1023,56,20,28,28,#TRUE#,0,"C#",0,0,0
 "Sub object1023()
 	'get slider values and assign them to variables
 	Dim duration as Integer
@@ -152,11 +152,11 @@ End Sub"
 	
 	'freq,duration,volume/amp
 	If tonPopup.Text = ~Lower~
-		Sound 87,duration,volume 
+		Sound 139,duration,volume 
 	ElseIf tonPopup.Text = ~Standard~
 		Sound 277,duration,volume 
 	ElseIf tonPopup.Text = ~Higher~
-		Sound 698,duration,volume 
+		Sound 554,duration,volume 
 	EndIf
 End Sub"
 "but"
@@ -164,169 +164,8 @@ End Sub"
 #TRUE#,#TRUE#,#TRUE#
 "obj"
 3
-"but","button3",1024,112,20,28,28,#TRUE#,0,"",0,0,0
+"but","button3",1024,112,20,28,28,#TRUE#,0,"D#",0,0,0
 "Sub object1024()
-	'get slider values and assign them to variables
-	Dim duration as Integer
-	Dim volume as Integer
-	
-	duration = Int(durSlider.Value)
-	volume = Int(volSlider.Value)
-	
-	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 98,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 311,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 784,duration,volume 
-	EndIf
-End Sub"
-"but"
-1
-#TRUE#,#TRUE#,#TRUE#
-"obj"
-3
-"but","button2",1025,84,20,28,28,#TRUE#,0,"",0,0,0
-"Sub object1025()
-	'get slider values and assign them to variables
-	Dim duration as Integer
-	Dim volume as Integer
-	
-	duration = Int(durSlider.Value)
-	volume = Int(volSlider.Value)
-	
-	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 93,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 294,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 740,duration,volume 
-	EndIf
-End Sub"
-"but"
-1
-#TRUE#,#TRUE#,#TRUE#
-"obj"
-3
-"but","button7",1027,112,48,28,28,#TRUE#,0,"",0,0,0
-"Sub object1027()
-	'get slider values and assign them to variables
-	Dim duration as Integer
-	Dim volume as Integer
-	
-	duration = Int(durSlider.Value)
-	volume = Int(volSlider.Value)
-	
-	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 123,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 392,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 988,duration,volume 
-	EndIf
-End Sub"
-"but"
-1
-#TRUE#,#TRUE#,#TRUE#
-"obj"
-3
-"but","button6",1028,84,48,28,28,#TRUE#,0,"",0,0,0
-"Sub object1028()
-	'get slider values and assign them to variables
-	Dim duration as Integer
-	Dim volume as Integer
-	
-	duration = Int(durSlider.Value)
-	volume = Int(volSlider.Value)
-	
-	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 117,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 370,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 932,duration,volume 
-	EndIf
-End Sub"
-"but"
-1
-#TRUE#,#TRUE#,#TRUE#
-"obj"
-3
-"but","button5",1029,56,48,28,28,#TRUE#,0,"",0,0,0
-"Sub object1029()
-	'get slider values and assign them to variables
-	Dim duration as Integer
-	Dim volume as Integer
-	
-	duration = Int(durSlider.Value)
-	volume = Int(volSlider.Value)
-	
-	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 110,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 349,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 880,duration,volume 
-	EndIf
-End Sub"
-"but"
-1
-#TRUE#,#TRUE#,#TRUE#
-"obj"
-3
-"but","button4",1030,28,48,28,28,#TRUE#,0,"",0,0,0
-"Sub object1030()
-	'get slider values and assign them to variables
-	Dim duration as Integer
-	Dim volume as Integer
-	
-	duration = Int(durSlider.Value)
-	volume = Int(volSlider.Value)
-	
-	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 104,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 330,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 831,duration,volume 
-	EndIf
-End Sub"
-"but"
-1
-#TRUE#,#TRUE#,#TRUE#
-"obj"
-3
-"but","button12",1031,28,104,28,28,#TRUE#,0,"",0,0,0
-"Sub object1031()
-	'get slider values and assign them to variables
-	Dim duration as Integer
-	Dim volume as Integer
-	
-	duration = Int(durSlider.Value)
-	volume = Int(volSlider.Value)
-	
-	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 165,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 523,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 1319,duration,volume 
-	EndIf
-End Sub"
-"but"
-1
-#TRUE#,#TRUE#,#TRUE#
-"obj"
-3
-"but","button11",1032,112,76,28,28,#TRUE#,0,"",0,0,0
-"Sub object1032()
 	'get slider values and assign them to variables
 	Dim duration as Integer
 	Dim volume as Integer
@@ -338,9 +177,9 @@ End Sub"
 	If tonPopup.Text = ~Lower~
 		Sound 156,duration,volume 
 	ElseIf tonPopup.Text = ~Standard~
-		Sound 494,duration,volume 
+		Sound 311,duration,volume 
 	ElseIf tonPopup.Text = ~Higher~
-		Sound 1245,duration,volume 
+		Sound 622,duration,volume 
 	EndIf
 End Sub"
 "but"
@@ -348,8 +187,8 @@ End Sub"
 #TRUE#,#TRUE#,#TRUE#
 "obj"
 3
-"but","button10",1033,84,76,28,28,#TRUE#,0,"",0,0,0
-"Sub object1033()
+"but","button2",1025,84,20,28,28,#TRUE#,0,"D",0,0,0
+"Sub object1025()
 	'get slider values and assign them to variables
 	Dim duration as Integer
 	Dim volume as Integer
@@ -361,9 +200,9 @@ End Sub"
 	If tonPopup.Text = ~Lower~
 		Sound 147,duration,volume 
 	ElseIf tonPopup.Text = ~Standard~
-		Sound 466,duration,volume 
+		Sound 294,duration,volume 
 	ElseIf tonPopup.Text = ~Higher~
-		Sound 1175,duration,volume 
+		Sound 587,duration,volume 
 	EndIf
 End Sub"
 "but"
@@ -371,31 +210,8 @@ End Sub"
 #TRUE#,#TRUE#,#TRUE#
 "obj"
 3
-"but","button9",1034,56,76,28,28,#TRUE#,0,"",0,0,0
-"Sub object1034()
-		'get slider values and assign them to variables
-	Dim duration as Integer
-	Dim volume as Integer
-	
-	duration = Int(durSlider.Value)
-	volume = Int(volSlider.Value)
-	
-	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 139,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 440,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 1109,duration,volume 
-	EndIf
-End Sub"
-"but"
-1
-#TRUE#,#TRUE#,#TRUE#
-"obj"
-3
-"but","button8",1035,28,76,28,28,#TRUE#,0,"",0,0,0
-"Sub object1035()
+"but","button7",1027,112,48,28,28,#TRUE#,0,"G",0,0,0
+"Sub object1027()
 	'get slider values and assign them to variables
 	Dim duration as Integer
 	Dim volume as Integer
@@ -405,11 +221,11 @@ End Sub"
 	
 	'freq,duration,volume/amp
 	If tonPopup.Text = ~Lower~
-		Sound 131,duration,volume 
+		Sound 196,duration,volume 
 	ElseIf tonPopup.Text = ~Standard~
-		Sound 415,duration,volume 
+		Sound 392,duration,volume 
 	ElseIf tonPopup.Text = ~Higher~
-		Sound 1047,duration,volume 
+		Sound 784,duration,volume 
 	EndIf
 End Sub"
 "but"
@@ -417,31 +233,8 @@ End Sub"
 #TRUE#,#TRUE#,#TRUE#
 "obj"
 3
-"but","button13",1036,56,104,28,28,#TRUE#,0,"",0,0,0
-"Sub object1036()
-	'get slider values and assign them to variables
-	Dim duration as Integer
-	Dim volume as Integer
-	
-	duration = Int(durSlider.Value)
-	volume = Int(volSlider.Value)
-	
-	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 175,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 554,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 1397,duration,volume 
-	EndIf
-End Sub"
-"but"
-1
-#TRUE#,#TRUE#,#TRUE#
-"obj"
-3
-"but","button14",1037,84,104,28,28,#TRUE#,0,"",0,0,0
-"Sub object1037()
+"but","button6",1028,84,48,28,28,#TRUE#,0,"F#",0,0,0
+"Sub object1028()
 	'get slider values and assign them to variables
 	Dim duration as Integer
 	Dim volume as Integer
@@ -453,9 +246,9 @@ End Sub"
 	If tonPopup.Text = ~Lower~
 		Sound 185,duration,volume 
 	ElseIf tonPopup.Text = ~Standard~
-		Sound 587,duration,volume 
+		Sound 370,duration,volume 
 	ElseIf tonPopup.Text = ~Higher~
-		Sound 1480,duration,volume 
+		Sound 740,duration,volume 
 	EndIf
 End Sub"
 "but"
@@ -463,7 +256,214 @@ End Sub"
 #TRUE#,#TRUE#,#TRUE#
 "obj"
 3
-"but","button15",1038,112,104,28,28,#TRUE#,0,"High",0,0,0
+"but","button5",1029,56,48,28,28,#TRUE#,0,"F",0,0,0
+"Sub object1029()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 175,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 349,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 698,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button4",1030,28,48,28,28,#TRUE#,0,"E",0,0,0
+"Sub object1030()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 165,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 330,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 659,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button12",1031,28,104,28,28,#TRUE#,0,"C",0,0,0
+"Sub object1031()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 262,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 523,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1047,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button11",1032,112,76,28,28,#TRUE#,0,"B",0,0,0
+"Sub object1032()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 247,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 494,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 988,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button10",1033,84,76,28,28,#TRUE#,0,"A#",0,0,0
+"Sub object1033()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 233,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 466,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 932,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button9",1034,56,76,28,28,#TRUE#,0,"A",0,0,0
+"Sub object1034()
+		'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 220,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 440,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 880,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button8",1035,28,76,28,28,#TRUE#,0,"G#",0,0,0
+"Sub object1035()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 208,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 415,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 831,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button13",1036,56,104,28,28,#TRUE#,0,"C#",0,0,0
+"Sub object1036()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 277,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 554,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1109,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button14",1037,84,104,28,28,#TRUE#,0,"D",0,0,0
+"Sub object1037()
+	'get slider values and assign them to variables
+	Dim duration as Integer
+	Dim volume as Integer
+	
+	duration = Int(durSlider.Value)
+	volume = Int(volSlider.Value)
+	
+	'freq,duration,volume/amp
+	If tonPopup.Text = ~Lower~
+		Sound 294,duration,volume 
+	ElseIf tonPopup.Text = ~Standard~
+		Sound 587,duration,volume 
+	ElseIf tonPopup.Text = ~Higher~
+		Sound 1175,duration,volume 
+	EndIf
+End Sub"
+"but"
+1
+#TRUE#,#TRUE#,#TRUE#
+"obj"
+3
+"but","button15",1038,112,104,28,28,#TRUE#,0,"D#",0,0,0
 "Sub object1038()
 	'get slider values and assign them to variables
 	Dim duration as Integer
@@ -474,11 +474,11 @@ End Sub"
 	
 	'freq,duration,volume/amp
 	If tonPopup.Text = ~Lower~
-		Sound 196,duration,volume
+		Sound 311,duration,volume
 	ElseIf tonPopup.Text = ~Standard~
 		Sound 622,duration,volume 
 	ElseIf tonPopup.Text = ~Higher~
-		Sound 1568,duration,volume
+		Sound 1245,duration,volume
 	EndIf
 End Sub"
 "lbl"
@@ -486,14 +486,17 @@ End Sub"
 "obj"
 3
 "lbl","Label1039",1039,4,4,11,55,#TRUE#,1,"TuneSmith",0,0,0
-""
+"Sub object1039()
+	'show menu on click
+	MenuDraw ~TuneSmith~
+End Sub"
 "pop"
 2
 #TRUE#,0,3
 "Lower	Standard	Higher"
 "obj"
 3
-"pop","tonPopup",1040,104,4,12,56,#TRUE#,0,"Tone",0,0,0
+"pop","tonPopup",1040,100,4,12,64,#TRUE#,0,"Tone",0,0,0
 ""
 "lbl"
 1
@@ -526,7 +529,7 @@ End Sub"
 "lst"
 2
 4
-"Version 1.0	Created by John Spahr	johnspahr.org	github.com/johnspahr"
+"Version 1.1	Created by John Spahr	johnspahr.org	github.com/johnspahr"
 "obj"
 3
 "lst","appInfoList",1052,8,76,52,144,#TRUE#,0,"",0,0,0
