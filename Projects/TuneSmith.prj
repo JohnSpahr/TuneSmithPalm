@@ -1,17 +1,17 @@
 "mdl"
 7
-"TuneSmith","appl","John",1063,505,0
+"TuneSmith","appl","John",1065,505,0
 ""
-1063
-1063
+1065
+1065
 "TuneSmith"
-"1.1"
+"1.2"
 ""
 "bmpfile"
 1
-"Bitmap1063"
-1063
-"..\Bitmaps\icon.jpg"
+"Bitmap1065"
+1065
+"..\Bitmaps\appicon.jpg"
 "mnu"
 2,"TuneSmith"
 1043
@@ -529,10 +529,10 @@ End Sub"
 "lst"
 2
 4
-"Version 1.1	Created by John Spahr	johnspahr.org	github.com/johnspahr"
+"Version 1.2	Created by John Spahr	johnspahr.org	github.com/johnspahr"
 "obj"
 3
-"lst","appInfoList",1052,8,76,52,144,#TRUE#,0,"",0,0,0
+"lst","appInfoList",1052,8,72,52,144,#TRUE#,0,"",0,0,0
 "Sub object1052()
 	appInfoList.Selected = 0 'don't allow selection for info list
 End Sub"
@@ -544,10 +544,10 @@ End Sub"
 ""
 "bmp"
 1
-1063
+1065
 "obj"
 3
-"bmp","Bitmap1054",1054,8,28,24,24,#TRUE#,0,"1063",0,0,0
+"bmp","Bitmap1054",1054,8,28,24,24,#TRUE#,0,"1065",0,0,0
 ""
 "lbl"
 1
