@@ -5,7 +5,7 @@
 1065
 1065
 "TuneSmith"
-"1.2"
+"1.3"
 ""
 "bmpfile"
 1
@@ -102,13 +102,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 131,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 262,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 523,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 131,duration,volume 
+		Case ~Standard~
+			Sound 262,duration,volume 
+		Case ~Higher~
+			Sound 523,duration,volume 
+	End Select
 End Sub"
 "sli"
 1
@@ -151,13 +152,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 139,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 277,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 554,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 139,duration,volume 
+		Case ~Standard~
+			Sound 277,duration,volume 
+		Case ~Higher~
+			Sound 554,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -174,13 +176,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 156,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 311,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 622,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 156,duration,volume 
+		Case ~Standard~
+			Sound 311,duration,volume 
+		Case ~Higher~
+			Sound 622,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -197,13 +200,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 147,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 294,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 587,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 147,duration,volume 
+		Case ~Standard~
+			Sound 294,duration,volume 
+		Case ~Higher~
+			Sound 587,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -220,13 +224,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 196,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 392,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 784,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 196,duration,volume 
+		Case ~Standard~
+			Sound 392,duration,volume 
+		Case ~Higher~
+			Sound 784,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -243,13 +248,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 185,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 370,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 740,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 185,duration,volume 
+		Case ~Standard~
+			Sound 370,duration,volume 
+		Case ~Higher~
+			Sound 740,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -266,13 +272,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 175,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 349,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 698,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 175,duration,volume 
+		Case ~Standard~
+			Sound 349,duration,volume 
+		Case ~Higher~
+			Sound 698,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -289,13 +296,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 165,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 330,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 659,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 165,duration,volume 
+		Case ~Standard~
+			Sound 330,duration,volume 
+		Case ~Higher~
+			Sound 659,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -312,13 +320,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 262,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 523,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 1047,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 262,duration,volume 
+		Case ~Standard~
+			Sound 523,duration,volume 
+		Case ~Higher~
+			Sound 1047,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -335,13 +344,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 247,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 494,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 988,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 247,duration,volume 
+		Case ~Standard~
+			Sound 494,duration,volume 
+		Case ~Higher~
+			Sound 988,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -358,13 +368,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 233,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 466,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 932,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 233,duration,volume 
+		Case ~Standard~
+			Sound 466,duration,volume 
+		Case ~Higher~
+			Sound 932,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -381,13 +392,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 220,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 440,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 880,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 220,duration,volume 
+		Case ~Standard~
+			Sound 440,duration,volume 
+		Case ~Higher~
+			Sound 880,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -404,13 +416,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 208,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 415,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 831,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 208,duration,volume 
+		Case ~Standard~
+			Sound 415,duration,volume 
+		Case ~Higher~
+			Sound 831,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -427,13 +440,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 277,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 554,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 1109,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 277,duration,volume 
+		Case ~Standard~
+			Sound 554,duration,volume 
+		Case ~Higher~
+			Sound 1109,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -450,13 +464,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 294,duration,volume 
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 587,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 1175,duration,volume 
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 294,duration,volume 
+		Case ~Standard~
+			Sound 587,duration,volume 
+		Case ~Higher~
+			Sound 1175,duration,volume 
+	End Select
 End Sub"
 "but"
 1
@@ -473,13 +488,14 @@ End Sub"
 	volume = Int(volSlider.Value)
 	
 	'freq,duration,volume/amp
-	If tonPopup.Text = ~Lower~
-		Sound 311,duration,volume
-	ElseIf tonPopup.Text = ~Standard~
-		Sound 622,duration,volume 
-	ElseIf tonPopup.Text = ~Higher~
-		Sound 1245,duration,volume
-	EndIf
+	Select Case tonPopup.Text
+		Case ~Lower~
+			Sound 311,duration,volume
+		Case ~Standard~
+			Sound 622,duration,volume 
+		Case ~Higher~
+			Sound 1245,duration,volume
+	End Select
 End Sub"
 "lbl"
 1
@@ -529,7 +545,7 @@ End Sub"
 "lst"
 2
 4
-"Version 1.2	Created by John Spahr	johnspahr.org	github.com/johnspahr"
+"Version 1.3	Created by John Spahr	johnspahr.org	github.com/johnspahr"
 "obj"
 3
 "lst","appInfoList",1052,8,72,52,144,#TRUE#,0,"",0,0,0
